@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imagebgBanner"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="fitXY" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/custom_bg_banner" />
+
+    <RelativeLayout
+        android:id="@+id/relative_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/imagebgBanner">
+
+        <ImageView
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/imv_banner"
+            android:padding="2dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp" />
+        <TextView
+            android:textStyle="bold"
+            android:text="Deo hieu gi het"
+            android:textColor="#fff"
+            android:textSize="17sp"
+            android:id="@+id/tv_title_bannerbh"
+            android:layout_toRightOf="@id/imv_banner"
+            android:layout_alignTop="@id/imv_banner"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="NotSibling" />
+        <RelativeLayout
+
+            android:layout_marginTop="7dp"
+            android:layout_toRightOf="@id/imv_banner"
+            android:layout_below="@id/tv_title_bannerbh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tvbannerNoidung"
+                android:textColor="#fff"
+                android:text="Chao ban den voi ung dung deo hieu
+                gi het ma van lam deo biet ma thich lam cho vui thich thi chieu"
+                android:maxLines="2"
+                android:layout_marginRight="40dp"
+                android:textSize="13sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
